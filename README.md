@@ -7,6 +7,7 @@ Mess_Manager is a web application designed to streamline the management of a col
 - HTML
 - CSS
 - Javascript
+- React
 - MongoDB
 - Express
 - Node.js
