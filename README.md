@@ -1,13 +1,13 @@
-# Mess_Manager
+# Hostel_Management_system
 
-Overview
-Mess_Manager is a web application designed to streamline the management of a college or hostel mess system. The project aims to provide a platform where users, mainly students and administrators, can efficiently handle and address issues related to the mess, from registering complaints to managing the daily menu.
+
+
+Hostel_Management_system is a web application designed to streamline the management of a college or hostel mess system. The project aims to provide a platform where users, mainly students and administrators, can efficiently handle and address issues related to the mess, from registering complaints to managing the daily menu.
 
 ## Technology Stack
 - HTML
 - CSS
 - Javascript
-- React
 - MongoDB
 - Express
 - Node.js
@@ -50,5 +50,8 @@ Mess_Manager is a web application designed to streamline the management of a col
 3. Make changes and commit: `git commit -m 'Add new-feature'`
 4. Push to the branch: `git push origin feature/new-feature`
 5. Submit a pull request
-
-## License
+![user profile](https://github.com/sachinkr24/Hostel_Management_system/assets/85781890/9e1beb0c-6b97-4c02-9828-fd268e6430af)
+![notice upload](https://github.com/sachinkr24/Hostel_Management_system/assets/85781890/d3d22fad-adf6-4416-b704-f962c1923bba)
+![approval](https://github.com/sachinkr24/Hostel_Management_system/assets/85781890/0908e9ad-c8fc-4e99-a59a-561b31535dd0)
+![users](https://github.com/sachinkr24/Hostel_Management_system/assets/85781890/081b4ccc-e93c-4f20-878b-5c2337e9c9e0)
+![complaint](https://github.com/sachinkr24/Hostel_Management_system/assets/85781890/9b60c647-964b-4ccb-876e-09977554c1fd)
