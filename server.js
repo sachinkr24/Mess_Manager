@@ -4,7 +4,6 @@ const moragan = require("morgan");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const uploadRoute = require('./routes/uploadRoute');
-const bodyParser = require('body-parser');
 //dotenv conig
 dotenv.config();
 
@@ -13,11 +12,6 @@ connectDB();
 
 //rest obejct
 const app = express();
-
-
-app.use(bodyParser.urlencoded({extended : true}));
-
-app.use(express.urlencoded({ extended: true }));
 
 //middlewares
 app.use(express.json()); 
