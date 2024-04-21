@@ -111,6 +111,14 @@ function App() {
                 </ProtectedRoute>
               }
             />
+             <Route
+              path="/complaints"
+              element={
+                <ProtectedRoute>
+                  <Appointments />
+                </ProtectedRoute>
+              }
+            />
 
             <Route
               path="/warden-appointments"
