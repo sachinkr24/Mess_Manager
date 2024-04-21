@@ -1,0 +1,32 @@
+/* Container for the entire form */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; 
+  
+}
+
+/* Style for the registration form */
+.register-form {
+  border: 2px solid rgba(80, 81, 82, 0.982);
+  padding: 30px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  max-width: 600px; 
+  width: 100%; 
+}
+
+/*Responsive styles*/
+@media only screen and (max-width: 600px) {
+  
+  .form-container {
+    padding: 10px; 
+  }
+
+  .register-form {
+    max-width: 100%; 
+  }
+}
