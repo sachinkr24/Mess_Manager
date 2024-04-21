@@ -335,7 +335,33 @@ const userAppointmentsController =async(req,res)=>{
   }
 }
 
-
+const complaintController=async(req,res)=>{
+  try{
+    console.log(req.body);
+    const complaint=new complaintModel(req.body);
+    await complaint.save();
+    //FOR SENDING NOTIFICATION
+    const warden =await userModel.findOne({isWarden:true});
+    const notification=warden.notification;
+    notification.push({
+      type: 'compalint',
+      message: `New complaint from ${complaint.name}`
+    });
+    res.status(200).send({
+      success: true,
+      message:"complaint registered ",
+    });
+   console.log(notification);
+  }
+    catch(error){
+      console.log(error); 
+      res.status(500).send({
+        success: false,
+        error,
+        message: "Error in user complaint",
+      });
+    }
+}
 
 const getallcomplaintcontroller= async(req,res)=>{
   try{
