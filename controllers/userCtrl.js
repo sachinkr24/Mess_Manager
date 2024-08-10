@@ -211,6 +211,35 @@ const bookAppointmentController = async (req, res) => {
 };
 
 
+const complaintController=async(req,res)=>{
+  try{
+    console.log(req.body);
+    const complaint=new complaintModel(req.body);
+    complaint.save();
+    //FOR SENDING NOTIFICATION
+    // const adminUser =await userModel.findOne({isAdmin:true});
+    // const notification=adminUser.notification;
+    // notification.push({
+    //   type: 'compalint',
+    //   message: `New complaint from ${complaint.name}`
+    // })
+    res.status(200).send({
+      success: true,
+      message:"complaint registered ",
+    });
+
+  }
+    catch(error){
+      console.log(error); 
+      res.status(500).send({
+        success: false,
+        error,
+        message: "Error in user complaint",
+      });
+    }
+}
+
+
 const bookingAvailabilityController = async (req, res) => {
   try {
     const date = moment(req.body.date, 'DD-MM-YYYY').toISOString()
