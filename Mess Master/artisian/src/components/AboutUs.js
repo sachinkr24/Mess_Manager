@@ -27,7 +27,7 @@ const AboutUs = () => {
                 className="bg-zinc-500 w-full h-full border-2  border-black object-cover"
               />
               <h1 className="absolute px-2 -ml-4  xl:ml-32 font-bold  bg-cyan-700 rounded-md border-black border-2 mt-[104px]  xl:mt-2  text-black text-[35px] xl:text-[40px]  xl:font-bold font-serif xl:p-2">
-                Suhas
+              Sachin
               </h1>
             </div>
             <div className=" flex w-24 h-24 bg-zinc-500 rounded-sm overflow-hidden">
@@ -36,7 +36,7 @@ const AboutUs = () => {
                 className="w-full h-full object-cover border-2 border-black"
               />
               <h1 className="absolute px-2 -ml-9 xl:ml-32 mt-[104px]  bg-cyan-700 rounded-md border-black border-2 xl:mt-2 text-black font-bold font-serif text-[35px] xl:text-[40px] xl:p-2 ">
-                Avinash
+                Ananya
               </h1>
             </div>
             <div className="flex w-24 h-24 bg-zinc-500 rounded-sm overflow-hidden">
@@ -45,7 +45,7 @@ const AboutUs = () => {
                 className="w-full h-full object-cover border-2 border-black"
               />
               <h1 className="absolute px-4 -ml-3 xl:ml-32 mt-[104px]  xl:mt-2  bg-cyan-700 rounded-md border-black border-2 text-black font-bold text-[35px] xl:text-[40px] xl:p-2 ">
-                Aman
+          Abhishek
               </h1>
             </div>
             <DrawOutlineButton className="relative  text-2xl">
