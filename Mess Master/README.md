@@ -33,7 +33,7 @@ A Web Application which we completed during the CodeSangam'23
 
  You should have NodeJs and mongodb already. 
 
- - git clone https://github.com/suhas3145/WebSter-23.git
+ - git clone [https://github.com/AnanyaJain25/Mess_Manager.git]
 
  - cd WebSter-23
 
