@@ -6,16 +6,14 @@ import { useSelector } from "react-redux";
 import Spinner from "./components/Spinner";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
-import Applywarden from "./pages/Applywarden";
+import ApplyDoctor from "./pages/ApplyDoctor";
 import NoificationPage from "./pages/NoificationPage";
 import Users from "./pages/admin/Users";
-import Wardens from "./pages/admin/wardens";
-import Profile from "./pages/warden/Profile"
+import Doctors from "./pages/admin/Doctors";
+import Profile from "./pages/doctor/Profile"
 import BookingPage from "./pages/BookingPage";
 import Appointments from "./pages/Appointments";
-import WardenAppointments from "./pages/warden/WardenAppointments";
-import NoticeForm from "./pages/UploadNotice";
-import Addcomplaint from "./pages/addcomp";
+import DoctorAppointments from "./pages/doctor/DoctorAppointments";
 function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
@@ -34,10 +32,10 @@ function App() {
               }
             />
             <Route
-              path="/apply-warden"
+              path="/apply-doctor"
               element={
                 <ProtectedRoute>
-                  <Applywarden />
+                  <ApplyDoctor />
                 </ProtectedRoute>
               }
             />
@@ -50,7 +48,7 @@ function App() {
               }
             />
             <Route
-              path="/warden/profile/:id"
+              path="/doctor/profile/:id"
               element={
                 <ProtectedRoute>
                   <Profile/>
@@ -59,7 +57,7 @@ function App() {
             />
 
 <Route
-              path="/warden/book-appointment/:wardenId"
+              path="/doctor/book-appointment/:doctorId"
               element={
                 <ProtectedRoute>
                   <BookingPage/>
@@ -68,10 +66,10 @@ function App() {
             /> 
 
             <Route
-              path="/admin/wardens"
+              path="/admin/doctors"
               element={
                 <ProtectedRoute>
-                  <Wardens />
+                  <Doctors />
                 </ProtectedRoute>
               }
             />
@@ -87,41 +85,19 @@ function App() {
             />
 
              <Route
-              path="/addcomp"
+              path="/appointments"
               element={
                 <ProtectedRoute>
-                  <Addcomplaint />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="/complaints" 
-            element={<ProtectedRoute>
-              <Appointments/>
-            </ProtectedRoute>}/>
-
-            <Route
-              path="/warden-appointments"
-              element={
-                <ProtectedRoute>
-                  <WardenAppointments />
+                  <Appointments />
                 </ProtectedRoute>
               }
             />
 
-             <Route
-              path="/Notice"
+<Route
+              path="/doctor-appointments"
               element={
                 <ProtectedRoute>
-                  <NoticeList />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route
-              path="/UploadNotice"
-              element={
-                <ProtectedRoute>
-                  <NoticeForm />
+                  <DoctorAppointments />
                 </ProtectedRoute>
               }
             />
